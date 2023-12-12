@@ -1,0 +1,172 @@
+/* Page styling: */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  /* background-color: rgb(255,150,150); */
+  background-image: linear-gradient(90deg, pink, pink);
+  font-size: x-large;
+}
+
+/* Layout styling: */
+.layout {
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* fr = Fraction = יחידת מידה */
+  grid-template-rows: 10% 85% 5%;
+}
+
+.layout,
+.layout > * {
+  border: 1px solid;
+}
+
+header,
+footer {
+  grid-column: span 6;
+}
+
+main {
+  grid-column: span 5;
+  overflow: auto;
+}
+
+/* Header styling: */
+/* header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Footer styling: */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Menu styling: */
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 40px;
+}
+
+a {
+  color: blue;
+}
+
+.active {
+  color: green;
+  font-family: Arial;
+}
+
+/* Home styling: */
+.main-paragraph {
+  /* margin: 40px; */ /* All sides */
+  /* margin: 40px 20px; */ /* top+bottom, right+left */
+  margin: 40px 40px 70px 40px; /* top, right, bottom, left */
+  text-align: justify;
+}
+
+/* Animals styling: */
+.animals-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.animals-container > img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+}
+
+/* Contact us styling: */
+.form-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+form > div {
+  border: 1px solid;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+textarea,
+button {
+  width: 400px;
+  font-size: x-large;
+}
+textarea {
+  height: 150px;
+}
+
+.words-container {
+  position: absolute;
+  text-align: center;
+  margin-left: 30px;
+  bottom: 100px;
+}
+
+span {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+span[title] {
+  background-color: aqua;
+}
+
+#now {
+  text-decoration: underline;
+}
+
+span:hover {
+  color: blue;
+}
+
+span::selection {
+  background-color: yellow;
+}
+
+ul {
+  display: inline-block;
+  color: darkviolet;
+  border: 3px solid darkorange;
+}
+
+li{
+    border:inherit;
+}
+
+/* table, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+input, textarea, button {
+    width: 300px;
+}
+
+textarea {
+    height: 70px;
+} */
