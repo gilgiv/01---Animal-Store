@@ -16,7 +16,7 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(6, 1fr); /* fr = Fraction = יחידת מידה */
-  grid-template-rows: 10% 85% 5%;
+  grid-template-rows: 10% 80% 10%;
 }
 
 .layout,
@@ -98,7 +98,7 @@ a {
 form {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
 }
 
 form > div {

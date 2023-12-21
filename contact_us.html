@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -16,11 +17,7 @@
     <section class="layout">
 
         <header>
-            <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                    <h1>Animal Store</h1>
-                </div>
-            </nav>
+            <h1>Animal Store</h1>
         </header>
 
         <aside>
@@ -36,20 +33,28 @@
             <div class="form-container">
                 <form action="save.html">
                     <div>
-                        <label for="name_box">Name: </label>
+                        <label for="first_name_box">First name: </label>
                     </div>
                     <div>
-                        <input class="form-control" type="text" name="full_name" id="name_box" required minlength="2" maxlength="50">
+                        <input class="form-control" type="text" name="first_name_box" id="first_name_box" minlength="2"
+                            maxlength="50">
+                    </div>
+                    <div>
+                        <label for="last_name_box">Last name: </label>
+                    </div>
+                    <div>
+                        <input class="form-control" type="text" name="last_name_box" id="last_name_box" minlength="2"
+                            maxlength="50">
                     </div>
                     <div>
                         <label for="message_box">Message: </label>
                     </div>
                     <div>
-                        <textarea name="message" id="message_box" required minlength="5" maxlength="1000"></textarea>
+                        <textarea name="message" id="message_box" minlength="5" maxlength="1000"></textarea>
                     </div>
                     <div></div>
                     <div>
-                        <button class="btn btn-primary">Send</button>
+                        <button class="btn btn-primary" onclick="validateFields()">Send</button>
                     </div>
 
 
@@ -82,14 +87,6 @@
                         </tbody>
                     </table> -->
                 </form>
-            </div>
-
-            <div class="words-container">
-                <span>Make</span>
-                <span>Things</span>
-                <span title="Go Go Israel">Go</span>
-                <span>Right</span>
-                <span id="now">Now</span>
             </div>
         </main>
 
